@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="child item1">1</div>
+      <div class="child item2">2</div>
+      <div class="child">3</div>
+      <div class="child">4</div>
+      <div class="child">5</div>
+      <div class="child">6</div>
+      <div class="child">7</div>
+      <div class="child">8</div>
+      <div class="child">9</div>
+    </div>
+    <div class="cards">
+      <div class="crd1"></div>
+      <div class="crd2">
+        <div class="child1"></div>
+        <div class="child2"></div>
+      </div>
+    </div>
+    <div id="parent">hai hellow welcome</div>
+    <div class="children">one child</div>
+    <div class="children">two child</div>
+    <div class="children">three child</div>
+    <div class="children">four child</div>
+
+    <button
+      onclick="reveal(event)"
+      onmouseover="revel(event)"
+      onmouseleave="hide(event)"
+    >
+      Reveal
+    </button>
+    <img
+      src="./Images/s-solid-sports-wear-yazole-original-imah2gjhyusnyfyb.webp"
+      alt=""
+      style="display: none"
+      id="showImage"
+    />
+
+    <form onsubmit="validate(event)">
+      <input type="text" placeholder="Username" id="username" />
+      <div class="error1"></div>
+      <input type="password" placeholder="Password" id="password" />
+      <div class="error2"></div>
+      <button type="submit" id="btn">Login</button>
+      <div id="loading" style="display: none;">Load......</div>
+      <div class="message"></div>
+    </form>
+
+    <button id="clickme">CLick ME</button>
+    <ul id="list"></ul>
+    <div id="reading"></div>
+    <div id="count"></div>
+    <script src="./Script.js"></script>
+  </body>
+</html>

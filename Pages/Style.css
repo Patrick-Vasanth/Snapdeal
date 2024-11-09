@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+  font-family: "Poppins", sans-serif;
+}
+
+.Emi {
+  color: #f9f906;
+  background-color: blue;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  letter-spacing: 20px;
+  line-height: 40px;
+}
+.icon {
+  font-size: 30px;
+}
+.logo {
+  background-color: red;
+}
+
+.logo,
+#contact {
+  font-weight: 900;
+}
+
+#contact {
+  font-size: 48px;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  /* background: url(./Media/1330753.png); */
+  background-size: cover;
+  color: white;
+  background-attachment: fixed;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #000;
+  padding: 30px;
+  margin: 30px;
+  /* border-radius: 50%; */
+  box-shadow: inset 5px 5px 3px 4px #000;
+}
+
+.card1 {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #000;
+  /* padding: 30px 20px 15px 10px; */
+  margin: 20px;
+  background-color: rgb(225, 255, 0);
+  position: relative;
+
+  /* left: 400px; */
+}
+
+.nav {
+  height: 75px;
+  background-color: red;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
+.innerCrd {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+}
+
+.butn {
+  background-color: transparent;
+  /* border: none; */
+  border: 1px solid green;
+  border-radius: 6px;
+  width: 150px;
+  padding: 10px 0;
+  color: #f9f906;
+}
+
+.list > li {
+  /* list-style: none; */
+  display: inline-block;
+  margin: 0 20px;
+  width: 60px;
+}
+
+.para ~ p {
+  color: red;
+}
+a {
+  text-decoration: none;
+  color: red;
+}
+
+.subList {
+  display: none;
+  /* visibility: hidden; */
+  padding: 0;
+}
+
+.hoverMe:hover .subList {
+  display: block;
+}
+
+.subList > li {
+  margin: 15px 0;
+}
+
+.subList > li:hover {
+  background-color: #f9f906;
+}
+
+.imge {
+  display: none;
+}
+
+.list .groc:hover ~ img {
+  display: block !important;
+}
+
+#inpt:focus {
+  outline: 2px solid red;
+  border: none;
+  background-color: yellow;
+  width: 200px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.pair::first-line {
+  color: red;
+  font-size: 48px;
+}
+
+/* atribute selector */
+input[type="text"] {
+  background-color: #f9f906;
+}
+
+/* ::marker{
+    color: red;
+    font-size: 48px;
+  } */
+
+::selection {
+  background-color: red;
+  color: yellow;
+}
+
+/* Snap nav */
+
+.snapNav {
+  display: flex;
+  height: 75px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f906;
+  position: fixed;
+  width: 100%;
+}
+.subList1,
+.subList2,
+.profileMenu {
+  display: none;
+  position: absolute;
+  padding: 0;
+}
+
+.logo {
+  margin-left: 20px;
+}
+.profile {
+  margin-right: 20px;
+}
+
+.men:hover .subList1 {
+  display: block;
+}
+
+.subList1>li{
+  margin: 30px 0;
+}
+
+.subList1>li:hover{
+  /* padding: 10px; */
+  background-color: red;
+}
+
+.cardprnt{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.crd{
+  width: 450px;
+  height: 450px;
+  border: 2px solid black;
+}
+
+.mainList {
+  display: flex;
+  width: 400px;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.mainList li {
+  list-style: none;
+}
+
+.icon{
+  display: none;
+}
+
+
+.background{
+  background: linear-gradient(-45deg,rgba(255, 0, 0),yellow,green);
+  opacity: .3;
+}
+
+.box1,.box2{
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.box2{
+  padding: 30px;
+  /* overflow-y: auto; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.small-card{
+  width: 50px;
+  height: 50px;
+  border: 2px solid red;
+  /* margin-left: 20px; */
+  border-top-left-radius: 20px;
+  transition: all.8s;
+  animation: myAnimation 10s 3s ease-out infinite;
+  position: relative;
+  left: 20px;
+}
+
+@keyframes myAnimation {
+  /* from{
+left: 20px;
+  }
+  to{
+    left: 500px;
+  } */
+   0%{
+    left: 20px;
+   }
+   50%{
+    left: 500px;
+    bottom: 100px;
+   }
+   100%{
+    left: 20px;
+   }
+}
+
+.small-card:hover{
+  /* transform: rotate(-45deg); */
+  /* width: 100px;
+  height: 100px; */
+  scale: 0.7;
+}
+
+@media screen and (max-width:1380px) {
+  .crd{
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width:1080px) {
+  .mainList{
+    width: 300px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .mainList,.search,.profile{
+    display: none;
+  }
+
+  .icon{
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+
+  .crd{
+    background-color: red;
+  }
+}
+
+
+.container{
+  background-color: red;
+}
+
+.child{
+  padding: 50px;
+  border: 2px solid red;
+}
+
+.cards{
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .7s linear;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.item1{
+  grid-column-start: 1;
+  grid-column-end:4 ;
+}
+
+.item2{
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+
+.crd1{
+  height: 100%;
+  width: 500px;
+  border: 2px solid black;
+}
+
+.crd2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.child1,.child2{
+  width: 500px;
+  height: 250px;
+  border: 2px solid black;
+}
